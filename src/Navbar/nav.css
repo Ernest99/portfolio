@@ -1,0 +1,75 @@
+nav {
+    width: fit-content;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    -moz-backdrop-filter: blur(7.5px);
+    border-radius: 30px;
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px !important;
+}
+
+nav a {
+    color: crimson;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.tooltip_text {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #dc143c;
+    color: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 8px 18px;
+    border-radius: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tooltip_text::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    /* border-color: #dc143c #dc143c #dc143c #dc143c; */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #dc143c;
+}
+
+nav a:hover .tooltip_text {
+    top: -60px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+nav a:hover,
+.active {
+    background: crimson;
+    color: #fff;
+    transition: 0.3s ease;
+}

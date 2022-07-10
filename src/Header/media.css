@@ -1,0 +1,33 @@
+.media {
+    position: absolute;
+    top: 30%;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: fit-content;
+}
+
+.media button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+.media button a {
+    color: #0e0d3cde;
+    font-size: 1.1rem;
+    transition: .3s ease;
+}
+
+.media button a:hover {
+    color: crimson;
+    transition: .3s ease;
+}

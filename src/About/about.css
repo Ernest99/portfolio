@@ -1,0 +1,132 @@
+.about {
+    width: 100%;
+    padding: 25px;
+    margin: 25px 0;
+    margin-bottom: 30px;
+}
+
+.about h4 {
+    text-align: center;
+    color: crimson;
+    padding-top: 10px;
+}
+
+.about h2 {
+    padding-top: 15px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.flex-field {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.dp {
+    width: 400px;
+    height: auto !important;
+    max-width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .dp img {
+    width: 100%;
+    height: auto !important;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: brightness(.8);
+    transition: 0.5s ease;
+}
+
+.container .dp img:hover {
+    filter: brightness(1.1);
+    transition: 0.5s ease;
+}
+
+.details p {
+    padding-bottom: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.about-btn {
+    margin-top: 15px;
+    padding: 15px 30px;
+    background: rgba(14, 13, 60, 0.87);
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.about-btn:hover {
+    background: rgba(14, 13, 60, 0.78);
+}
+
+.card_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 250px;
+    max-width: 100%;
+    /* From https://css.glass */
+    background: rgba(14, 13, 60, 0.78);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.card:hover {
+    transition: .3s ease;
+    background: rgba(14, 13, 60, 0.87);
+}
+
+.card:hover small {
+    color: crimson;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+.card small {
+    margin-top: 10px;
+    color: #c5c5c5b4;
+}
+
+.card h4 {
+    color: #fff;
+}
+
+.card_icon {
+    font-size: 30px;
+    color: crimson;
+}
+
+
+/* media query */
+
+@media(max-width: 689px) {
+    .dp {
+        width: 100%;
+    }
+    .card_container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+    }
+}
