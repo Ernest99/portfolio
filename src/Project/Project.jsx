@@ -12,25 +12,25 @@ const data = [
         id: 1,
         image: IMG1,
         title: 'Alpha Pizza',
-        github: 'https://github.com',
+        github: 'https://github.com/Ernest99/pizza-site',
         demo: 'https://alphapizza.netlify.app/'
     }, {
         id: 2,
         image: IMG2,
         title: 'Duapa App',
-        github: 'https://github.com',
+        github: 'https://github.com/Ernest99/Duapa',
         demo: 'https://duapa.netlify.app/'
     }, {
         id: 3,
         image: IMG3,
         title: 'Hotello',
-        github: 'https://github.com',
+        github: 'https://github.com/Ernest99/Hotel-website',
         demo: 'https://alphahotello.netlify.app/'
     }, {
         id: 4,
         image: IMG4,
         title: 'Weight Convertor',
-        github: 'https://github.com',
+        github: 'https://github.com/Ernest99/Weight-Convertor',
         demo: 'https://weightconvertorapp.netlify.app/'
     }, {
         id: 5,

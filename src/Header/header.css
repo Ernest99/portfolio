@@ -3,7 +3,7 @@ header {
     height: 100vh;
     /* background: linear-gradient(rgba(14, 13, 60, 0.87), rgba(14, 13, 60, 0.87), url(../assets/dp.jpg)); */
     background: linear-gradient(#0e0d3cde, rgba(14, 13, 60, 0.87)), url("../assets/dp.jpeg");
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
